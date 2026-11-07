@@ -1,0 +1,46 @@
+{
+  "name": "@webship/workspace-podman",
+  "version": "1.0.0",
+  "description": "Podman for Webship Workspace: the PODMAN menu on every project with a compose file or a Containerfile (compose up/down/ps/logs, build and run the Containerfile, a shell, pods), the up/down caption. A runtime of @webship/workspace-container.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "private": true,
+  "license": "ISC",
+  "repository": "github:webship/workspace-podman",
+  "files": [
+    "dist/src",
+    "features",
+    "scripts",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "workspacePlugin": {
+    "name": "podman",
+    "label": "Podman",
+    "typeActions": {
+      "podman": [
+        "sites",
+        "code"
+      ]
+    },
+    "scripts": {
+      "hostInstall": "scripts/host-install.sh"
+    },
+    "features": [
+      "features/podman.feature"
+    ]
+  },
+  "dependencies": {
+    "@webship/workspace-container": "github:webship/workspace-container#1.0.x"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@webship/workspace-plugin-api": "github:webship/workspace-plugin-api#1.0.x",
+    "typescript": "^5.9.0"
+  }
+}
