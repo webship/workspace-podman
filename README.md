@@ -1,9 +1,9 @@
-# @webship/workspace-podman
+# @webship.co/workspace-podman
 
 Podman for the [Webship Workspace](https://github.com/webship/workspace) dashboard: the **PODMAN**
 menu on every project folder that carries a compose file or a Containerfile, with the runtime's verbs as terminal sessions in
 the project, the up/down caption and the site link, and "Write a Containerfile skeleton here" when a new folder is made.
-A runtime of [`@webship/workspace-container`](https://github.com/webship/workspace-container).
+A runtime of [`@webship.co/workspace-container`](https://github.com/webship/workspace-container).
 
 A project is a Podman project when it carries a compose file (`compose.yaml`, `docker-compose.yml` and variants: run through `podman compose`) or a `Containerfile`/`Dockerfile` (built and run as one container named after the folder). Podman is rootless and daemonless; the dashboard container needs the podman CLI and the host's socket or a remote connection to act on the host's containers.
 

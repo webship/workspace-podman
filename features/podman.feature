@@ -5,4 +5,4 @@ Feature: The Podman plugin on a project row
   Scenario: The plugin is listed on the Plugins page
     Given I am on "/settings/plugins"
      Then I should see "Podman"
-      And I should see "@webship/workspace-podman"
+      And I should see "@webship.co/workspace-podman"
