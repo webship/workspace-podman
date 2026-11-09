@@ -1,6 +1,6 @@
 {
   "name": "@webship.co/workspace-podman",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0",
   "description": "Podman for Webship Workspace: the PODMAN menu on every project with a compose file or a Containerfile (compose up/down/ps/logs, build and run the Containerfile, a shell, pods), the up/down caption. A runtime of @webship.co/workspace-container.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -38,11 +38,11 @@
     ]
   },
   "dependencies": {
-    "@webship.co/workspace-container": "^1.0.0-rc1"
+    "@webship.co/workspace-container": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
-    "@webship.co/workspace-plugin-api": "^1.0.0-rc1",
+    "@webship.co/workspace-plugin-api": "^1.0.0",
     "typescript": "^5.9.0"
   },
   "publishConfig": {
