@@ -16,6 +16,17 @@ bash core/scripts/plugins.sh --activate podman
 bash core/scripts/plugins.sh --install podman
 ```
 
+## What it needs
+
+On the machine this plugin needs `podman` (https://podman.io/docs/installation), and its manifest says so (`needs.commands`). The workspace reports it and never installs it:
+
+```bash
+bash core/scripts/plugins.sh --check podman      # found, with its version, or missing, with how to install it
+webship-workspace doctor                        # the same for the core and every plugin
+```
+
+It needs no other plugin: its menu is on the project rows of whatever folders the workspace has.
+
 ## The verbs
 
 | Verb | Command |
