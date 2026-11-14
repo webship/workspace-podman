@@ -24,6 +24,14 @@
   "workspacePlugin": {
     "name": "podman",
     "label": "Podman",
+    "needs": {
+      "commands": [
+        {
+          "command": "podman",
+          "hint": "https://podman.io/docs/installation"
+        }
+      ]
+    },
     "typeActions": {
       "podman": [
         "sites",
