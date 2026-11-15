@@ -14,6 +14,12 @@ import { podmanRuntime } from './lib/runtime';
 
 export { podmanRuntime };
 
+/** The AI items the installer places: agents in ai-agents/, skills in ai-skills/, commands in ai-commands/, prompts in ai-prompts/. */
+export const AGENTS: string[] = ['podman-operator'];
+export const SKILLS: string[] = ['podman-menu'];
+export const AI_COMMANDS: string[] = ['podman-status'];
+export const PROMPTS: string[] = ['podman-up-and-check'];
+
 export function register(api: PluginApi): void {
   registerContainer(api, podmanRuntime);
 }

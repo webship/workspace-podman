@@ -1,0 +1,29 @@
+{
+  "variants": [
+    {
+      "title": "With a compose file (shown for `compose.yaml`)",
+      "sample": {
+        "file": "compose.yaml",
+        "name": "<name>"
+      }
+    },
+    {
+      "title": "With a `Containerfile` or a `Dockerfile` and no compose file (shown for `Containerfile`)",
+      "sample": {
+        "file": "Containerfile",
+        "name": "<name>"
+      }
+    }
+  ],
+  "readonly": [
+    "pods",
+    "status"
+  ],
+  "handover": [
+    "logs",
+    "shell"
+  ],
+  "export": "podmanRuntime",
+  "find": "ls compose.yaml compose.yml docker-compose.yml docker-compose.yaml Containerfile Dockerfile 2>/dev/null",
+  "helper": []
+}
