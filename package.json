@@ -1,6 +1,6 @@
 {
   "name": "@webship.co/workspace-podman",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Podman for Webship Workspace: the PODMAN menu on every project with a compose file or a Containerfile (compose up/down/ps/logs, build and run the Containerfile, a shell, pods), the up/down caption. It carries its AI items, each placed in the workspace folder of its kind: an agent, a skill, a command and a prompt. A runtime of @webship.co/workspace-container.",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
